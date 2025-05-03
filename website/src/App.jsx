@@ -21,11 +21,20 @@ export default function App() {
         <p>Technology encompasses a wide range of fields, including health, agriculture, artificial intelligence, information and communication, energy, transportation, and education, among others. It also includes specific technologies like biotechnology, manufacturing, construction, and the Internet of Things</p>
       </section>
 
-      <section id='about' className='Section'>
-        <h1>We are driving to make country future bright</h1>
-        <p>Computer technology encompasses the development, application, and study of computers and related technologies, including hardware, software, networking, and more. It's a broad field that involves designing, implementing, and maintaining systems and applications to perform specific tasks or functions. 
-        ...</p>
-      </section>
+      <section id="about" class="Section">
+    <div class="about-content">
+      <div class="about-text">
+        <h1>About Us</h1>
+        <p>
+          We are passionate developers and designers delivering high-quality digital products.
+          Our mission is to make the web more beautiful and functional. With a creative team and innovative minds, we shape the future of web technology.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="./assets/web.jpg" alt="" />
+      </div>
+    </div>
+  </section>
 
       <section id='service' className='Section'>
   <h2>Our Services</h2>
@@ -71,11 +80,15 @@ export default function App() {
 </section>
 
 
-      <section id='contact' className='Section'>
-        <h2>Contact us</h2>
-        <p>Phone number: 03352374683</p>
-        <p>Email: mariahussain021@gmail.com</p>
-      </section>
+<section id="contact" class="Section contact-section">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
       <footer className='footer'>
         <p>&copy; 2025 Mywebsite. All rights reserved</p>
