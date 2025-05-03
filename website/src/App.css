@@ -186,3 +186,118 @@ body {
     height: 45px;
   }
 }
+
+.contact-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #f9f871, #4facfe);
+  text-align: center;
+  color: #333;
+}
+
+.contact-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #d44891, #4facfe, #f9f871, #6a11cb);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0;
+  border: none;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  background: linear-gradient(135deg, #d44891, #4facfe, #f9f871, #6a11cb);
+}
+
+.contact-form button {
+  padding: 12px 25px;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 20px;
+  }
+
+  .contact-section h2 {
+    font-size: 1.8rem;
+  }
+}
+
+.about-section {
+  padding: 80px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #333;
+  text-align: left;
+}
+
+.about-image {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #111;
+  text-align: center; /* Add this line */
+}
